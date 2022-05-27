@@ -45,3 +45,5 @@ Content
 + HMMs
 + NNs
 
+What about decision trees, SVMs, etc? I should include whatever I can find in
+sklearn.
