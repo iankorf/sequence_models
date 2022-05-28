@@ -32,9 +32,10 @@ Data included here:
 Measures of Accuracy
 --------------------
 
-We are going to be comparing a variety of sequence models. Towards this end, we
-need a common way to assess the performance of each. There are standar formulae
-for doing this, all of which are based on 4 values.
+We are going to be comparing a variety of sequence models, each of which is a
+discriminator that will be attempting to determine how to label a sequence.
+Towards this end, we need a common way to assess the performance of each model.
+There are standard formulae for doing this, all of which are based on 4 values.
 
 + TP - true positives
 + FP - false positives
@@ -51,7 +52,7 @@ a few:
 + Accuracy: ACC = (TP + TN) / (TP + TN + FP + FN)
 + F1 score: F1 = 2TP / (2TP + FP + FN)
 
-Which is the best way to evaluate a discriminator? There is no single best way
+Which is the best way to evaluate a discriminator? There is no single best way,
 but a bad way is to focus on one. For example, it is easy to optimize
 sensitivity and end up with terrible specificity and vice-versa.
 
